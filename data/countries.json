@@ -1,0 +1,16 @@
+[
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "summary": "Very beautiful, with nice people.",
+    "cities": [
+      {
+        "name": "Valkenburg",
+        "country": "Netherlands",
+        "description": "Small city with caves and castle.",
+        "food": ["Vlaai"],
+        "activities": ["Castle", "Caves"]
+      }
+    ]
+  }
+]
