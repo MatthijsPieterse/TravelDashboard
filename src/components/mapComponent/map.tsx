@@ -1,90 +1,109 @@
 import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
-import countryNameMap from "../../util/countryNameMap";
-import DynamicMarker from "./dynamicMarker";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
+import {
+  MapContainer,
+  TileLayer,
+  GeoJSON,
+  LayersControl,
+  LayerGroup,
+} from "react-leaflet";
+import type { LatLngExpression } from "leaflet";
+import { countryNameMap } from "../../util/countryNameMap";
 import { ZoomTracker } from "./ZoomTracker";
+import { DynamicMarker } from "./dynamicMarker";
+import Spinner from "../../util/spinner";
 
 interface MapProps {
+  defaultCenter: LatLngExpression;
   defaultZoom: number;
 }
 
-const MapComponent = ({ defaultZoom }: MapProps) => {
+const MapComponent = ({ defaultCenter, defaultZoom }: MapProps) => {
   const [countries, setCountries] = useState<any>(null);
   const [visitedCountries, setVisitedCountries] = useState<string[]>([]);
-  const [places, setPlaces] = useState<any>(null);
+  const [visitedPlaces, setVisitedPlaces] = useState<any>(null);
   const [zoom, setZoom] = useState<number>(defaultZoom);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/data/countries.geojson")
-      .then((res) => res.json())
-      .then(setCountries);
+    Promise.all([
+      fetch("/data/countries.geojson").then((res) => res.json()),
+      fetch("/data/visitedCountries.geojson").then((res) => res.json()),
+      fetch("/data/visitedPlaces.geojson").then((res) => res.json()),
+    ]).then(([countriesData, visitedCountriesData, visitedPlacesData]) => {
+      setCountries(countriesData);
 
-    fetch("/data/visitedCountries.geojson")
-      .then((res) => res.json())
-      .then((data: any) => {
-        const names =
-          data?.features
-            ?.map((f: any) => f?.properties?.name)
-            .filter(Boolean) || [];
-        setVisitedCountries(names);
-      });
+      const names =
+        visitedCountriesData?.features
+          ?.map((f: any) => f?.properties?.name)
+          .filter(Boolean) || [];
 
-    fetch("/data/visitedPlaces.geojson")
-      .then((res) => res.json())
-      .then(setPlaces);
+      setVisitedCountries(names);
+      setVisitedPlaces(visitedPlacesData);
+
+      setLoading(false);
+    });
   }, []);
+
+  const countryStyle = useCallback(
+    (feature: any) => {
+      const englishName = feature?.properties?.name;
+      const localName = countryNameMap[englishName];
+
+      const visited = localName
+        ? visitedCountries.some((visitedName) =>
+            visitedName.toLowerCase().includes(localName.toLowerCase()),
+          )
+        : false;
+
+      return {
+        fillColor: visited ? "green" : "gray",
+        weight: 1,
+        color: "black",
+        fillOpacity: 0.5,
+      };
+    },
+    [visitedCountries],
+  );
+
+  if (loading) {
+    return Spinner();
+  }
 
   return (
     <MapContainer
-      center={[20, 0]}
+      center={defaultCenter}
       zoom={defaultZoom}
       style={{ width: "100%", height: "100%" }}
     >
       <ZoomTracker setZoom={setZoom} />
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      {countries && (
-        <GeoJSON
-          data={countries}
-          style={(feature: any) => {
-            const englishName = feature?.properties?.name;
-            const localName = countryNameMap[englishName];
+      <LayersControl position="topright">
+        <LayersControl.Overlay checked name="Visited Countries">
+          <LayerGroup>
+            {countries && <GeoJSON data={countries} style={countryStyle} />}
+          </LayerGroup>
+        </LayersControl.Overlay>
 
-            // Log missing mappings
-            if (!localName) {
-              console.log("Missing mapping for:", englishName);
-            }
-
-            const visited = localName
-              ? visitedCountries.some((visitedName) =>
-                  visitedName.toLowerCase().includes(localName.toLowerCase()),
-                )
-              : false;
-
-            return {
-              fillColor: visited ? "green" : "gray",
-              weight: 1,
-              color: "black",
-              fillOpacity: 0.5,
-            };
-          }}
-        />
-      )}
-
-      {places &&
-        places.features.map((place: any, i: number) => (
-          <DynamicMarker
-            key={i}
-            position={[
-              place.geometry.coordinates[1],
-              place.geometry.coordinates[0],
-            ]}
-            zoom={zoom}
-          >
-            {place.properties.name}
-          </DynamicMarker>
-        ))}
+        <LayersControl.Overlay checked name="Visited Places">
+          <LayerGroup>
+            {visitedPlaces &&
+              visitedPlaces.features.map((place: any, i: number) => (
+                <DynamicMarker
+                  key={i}
+                  position={[
+                    place.geometry.coordinates[1],
+                    place.geometry.coordinates[0],
+                  ]}
+                  zoom={zoom}
+                >
+                  {place.properties.name}
+                </DynamicMarker>
+              ))}
+          </LayerGroup>
+        </LayersControl.Overlay>
+      </LayersControl>
     </MapContainer>
   );
 };

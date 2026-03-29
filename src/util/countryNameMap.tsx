@@ -1,4 +1,4 @@
-const countryNameMap: Record<string, string> = {
+export const countryNameMap: Record<string, string> = {
   Indonesia: "Indonesia",
   Malaysia: "Malaysia",
   Chile: "Chile",
@@ -258,5 +258,3 @@ const countryNameMap: Record<string, string> = {
   "Northern Cyprus": "Northern Cyprus",
   "Cyprus No Mans Area": "Cyprus No Mans Area"
 };
-
-export default countryNameMap;

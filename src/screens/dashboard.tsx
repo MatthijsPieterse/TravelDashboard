@@ -8,7 +8,7 @@ const Home = () => {
 
       {/* Map */}
       <div className="col-span-2 row-span-2 border rounded-xl">
-        <MapComponent defaultZoom={2} />
+        <MapComponent defaultCenter={[20, 10]} defaultZoom={2} />
       </div>
 
       {/* Stats */}
