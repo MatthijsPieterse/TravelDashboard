@@ -1,0 +1,369 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6343348,
+          52.243507
+        ]
+      },
+      "properties": {
+        "name": "Nederland",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6667224,
+          50.64028
+        ]
+      },
+      "properties": {
+        "name": "België - Belgique - Belgien",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8883397,
+          46.603361
+        ]
+      },
+      "properties": {
+        "name": "France",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.674297,
+          42.63843
+        ]
+      },
+      "properties": {
+        "name": "Italia",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.987701,
+          38.99536
+        ]
+      },
+      "properties": {
+        "name": "Ελλάδα",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4276819,
+          43.732349
+        ]
+      },
+      "properties": {
+        "name": "Monaco",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.12456,
+          47.593971
+        ]
+      },
+      "properties": {
+        "name": "Österreich",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.44783,
+          51.163817
+        ]
+      },
+      "properties": {
+        "name": "Deutschland",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.452863,
+          48.741153
+        ]
+      },
+      "properties": {
+        "name": "Slovensko",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.338096,
+          49.743914
+        ]
+      },
+      "properties": {
+        "name": "Česko",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.96509,
+          15.926666
+        ]
+      },
+      "properties": {
+        "name": "Việt Nam",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.73121,
+          12.750348
+        ]
+      },
+      "properties": {
+        "name": "Philippines",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1296637,
+          49.815881
+        ]
+      },
+      "properties": {
+        "name": "Lëtzebuerg",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.920935,
+          63.246781
+        ]
+      },
+      "properties": {
+        "name": "Suomi / Finland",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.331922,
+          58.752369
+        ]
+      },
+      "properties": {
+        "name": "Eesti",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.753767,
+          56.840656
+        ]
+      },
+      "properties": {
+        "name": "Latvija",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.749999,
+          55.350001
+        ]
+      },
+      "properties": {
+        "name": "Lietuva",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5732028,
+          42.540717
+        ]
+      },
+      "properties": {
+        "name": "Andorra",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.8379975,
+          39.326052
+        ]
+      },
+      "properties": {
+        "name": "España",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.452851,
+          41.90341
+        ]
+      },
+      "properties": {
+        "name": "Civitas Vaticana - Città del Vaticano",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5531528,
+          47.141631
+        ]
+      },
+      "properties": {
+        "name": "Liechtenstein",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.506093,
+          47.181759
+        ]
+      },
+      "properties": {
+        "name": "Magyarország",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2319579,
+          46.798551
+        ]
+      },
+      "properties": {
+        "name": "Schweiz/Suisse/Svizzera/Svizra",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.520859,
+          59.674972
+        ]
+      },
+      "properties": {
+        "name": "Sverige",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7876688,
+          61.152942
+        ]
+      },
+      "properties": {
+        "name": "Norge",
+        "marker-color": "red"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.333308,
+          55.670244
+        ]
+      },
+      "properties": {
+        "name": "Danmark",
+        "marker-color": "red"
+      }
+    }
+  ]
+}
