@@ -26,10 +26,11 @@ const MapComponent = ({ defaultCenter, defaultZoom }: MapProps) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const base = import.meta.env.BASE_URL ?? "/";
     Promise.all([
-      fetch("/data/countries.geojson").then((res) => res.json()),
-      fetch("/data/visitedCountries.geojson").then((res) => res.json()),
-      fetch("/data/visitedPlaces.geojson").then((res) => res.json()),
+      fetch(`${base}data/countries.geojson`).then((res) => res.json()),
+      fetch(`${base}data/visitedCountries.geojson`).then((res) => res.json()),
+      fetch(`${base}data/visitedPlaces.geojson`).then((res) => res.json()),
     ]).then(([countriesData, visitedCountriesData, visitedPlacesData]) => {
       setCountries(countriesData);
 
@@ -78,6 +79,7 @@ const MapComponent = ({ defaultCenter, defaultZoom }: MapProps) => {
     >
       <ZoomTracker setZoom={setZoom} />
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      {/* <TileLayer url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png" /> */}
 
       <LayersControl position="topright">
         <LayersControl.Overlay checked name="Visited Countries">
