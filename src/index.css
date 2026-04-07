@@ -1,3 +1,32 @@
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@source inline("{bg,text,border}-{red,blue,green,yellow,emerald,lime,cyan,sky,orange,amber,indigo,violet,rose,teal}-{50,{100..900..100},950}");
+
+:root {
+  /* --color-primary: #0b4d3b,
+  --color-primaryDark: #053127, */
+  --color-sidebarStart: #004E3A;
+  --color-sidebarEnd: #002C22;
+  --color-sidebarLight: #195B4A;
+  --color-sidebarLightText: #80CDAD;
+  --color-sidebarDark: #004836;
+  --color-sidebarDarkText: #39AA82;
+  --color-page: #F5F5F4;
+  --color-blockHeader: #FAFAF9;
+  --color-accent: #c2410c;
+}
+
+.bg-sidebarStart { background-color: var(--color-sidebarStart); }
+.bg-sidebarEnd { background-color: var(--color-sidebarEnd); }
+.bg-sidebarLight { background-color: var(--color-sidebarLight); }
+.bg-sidebarDark { background-color: var(--color-sidebarDark); }
+.bg-page { background-color: var(--color-page); }
+.bg-blockHeader { background-color: var(--color-blockHeader); }
+.bg-accent { background-color: var(--color-accent); }
+
+.text-sidebarLightText { color: var(--color-sidebarLightText); }
+.text-sidebarDarkText { color: var(--color-sidebarDarkText); }
