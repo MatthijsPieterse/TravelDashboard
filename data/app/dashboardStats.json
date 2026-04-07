@@ -1,0 +1,186 @@
+{
+  "globalStats": {
+    "totalCountries": 26,
+    "totalCities": 271,
+    "totalContinents": 2
+  },
+  "tileStats": {
+    "grid1": {
+      "visited": 67,
+      "total": 25408,
+      "percentage": 0.2636964735516373
+    },
+    "grid05": {
+      "visited": 89,
+      "total": 94730,
+      "percentage": 0.0939512298110419
+    }
+  },
+  "geoStats": {
+    "northernmost": {
+      "name": "Inari",
+      "coordinates": [
+        27.026076,
+        68.906245
+      ]
+    },
+    "southernmost": {
+      "name": "Cebu City",
+      "coordinates": [
+        123.90192,
+        10.293564
+      ]
+    },
+    "highestpoint": {
+      "name": "Lang Biang Mountain",
+      "coordinates": [
+        108.440616,
+        12.047309
+      ],
+      "height": "2167m"
+    },
+    "lowestpoint": {
+      "name": "Schiphol Airport",
+      "coordinates": [
+        4.763889,
+        52.310556
+      ],
+      "height": "-4,5m"
+    },
+    "hottestTemperature": {
+      "place": "Monaco, Monaco",
+      "temperature": "42°C"
+    },
+    "coldestTemperature": {
+      "place": "Inari, Finland",
+      "temperature": "-30°C"
+    }
+  },
+  "transportation": {
+    "flightsTaken": 13,
+    "airportsBeen": 11,
+    "airlinesFlown": 9,
+    "timeInAir": "57h 13m",
+    "distanceTraveled": {
+      "plane": "37.300km",
+      "train": "10.364km",
+      "bus": "5,351km",
+      "boat": "914,6km",
+      "car": "157,4km",
+      "bike": "75,1km",
+      "total": "54.162km"
+    },
+    "longest": {
+      "Flight": {
+        "from": "Ho Chi Minh City (SGN)",
+        "to": "Frankfurt (FRA)",
+        "distance": "10,500 km",
+        "time": "12h 5m"
+      },
+      "Train": {
+        "from": "Tampere",
+        "to": "Rovaniemi",
+        "distance": "563.9 km",
+        "time": "8h 2m"
+      },
+      "Bus": {
+        "from": "Copenhagen",
+        "to": "Arnhem",
+        "distance": "726 km",
+        "time": "10h 16m"
+      },
+      "Boat": {
+        "from": "Turku",
+        "to": "Stockholm",
+        "distance": "275 km",
+        "time": "9h 35m"
+      },
+      "Car": {
+        "from": "Blerick",
+        "to": "Venlo",
+        "distance": "76 km",
+        "time": "57m"
+      },
+      "Bike": {
+        "from": "Valkenburg",
+        "to": "Vaals",
+        "distance": "25.4 km",
+        "time": "1h 30m"
+      }
+    }
+  },
+  "cultural": {
+    "languagesHeard": {
+      "inPlaceSimple": 21,
+      "inPlaceDetailed": 23,
+      "allSimple": 36,
+      "allDetailed": 43
+    },
+    "cuisinesTried": 33,
+    "currenciesUsed": 10,
+    "UNESCO": "N/A",
+    "timeZones": {
+      "visited": 4,
+      "total": 38
+    }
+  },
+  "tripRecords": {
+    "longestTrip": 23,
+    "shortestTrip": 1
+  },
+  "personal": {
+    "favouriteTravelDestinations": {
+      "overall": {
+        "countries": [
+          "Philippines",
+          "Vietnam",
+          "Andorra",
+          "Italy",
+          "Spain"
+        ],
+        "cities": [
+          "Budapest",
+          "Andorra la Vella",
+          "Prague",
+          "Vilnius",
+          "Valencia"
+        ]
+      },
+      "byContinent": {
+        "Europe": {
+          "countries": [
+            "Andorra",
+            "Italy",
+            "Spain",
+            "Hungary",
+            "Switzerland"
+          ],
+          "cities": [
+            "Budapest",
+            "Andorra la Vella",
+            "Prague",
+            "Vilnius",
+            "Valencia"
+          ]
+        },
+        "Asia": {
+          "countries": [
+            "Philippines",
+            "Vietnam"
+          ],
+          "cities": [
+            "Da Lat",
+            "Ho Chi Minh City"
+          ]
+        }
+      },
+      "netherlands": {
+        "cities": [
+          "Valkenburg",
+          "Utrecht",
+          "Zutphen"
+        ]
+      }
+    }
+  }
+}
