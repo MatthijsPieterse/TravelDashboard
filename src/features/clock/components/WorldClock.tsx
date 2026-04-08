@@ -62,6 +62,7 @@ export default function WorldClock() {
                 x={x}
                 y={y}
                 fontSize="9"
+                fill={city === localCity ? "#f7abab" : "#ecfdf5"}
                 textAnchor="middle"
                 transform={`rotate(${angle} ${x} ${y})`}
               >

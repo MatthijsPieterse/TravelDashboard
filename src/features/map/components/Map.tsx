@@ -41,7 +41,7 @@ const MapComponent = ({ defaultCenter, defaultZoom }: MapProps) => {
     <MapContainer
       center={defaultCenter}
       zoom={defaultZoom}
-      style={{ width: "100%", height: "100%" }}
+      className="h-full w-full z-0"
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {/* <TileLayer url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png" /> */}
