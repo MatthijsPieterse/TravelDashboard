@@ -84,13 +84,13 @@ export const buildDashboardData = (
       airlinesFlown: 9,
       timeInAir: "57h 13m",
       distanceTraveled: {
-        plane: "37.300km",
-        train: "10.364km",
-        bus: "5.351km",
-        boat: "914,6km",
-        car: "157,4km",
-        bike: "75,1km",
-        total: "54.162km",
+        plane: "37.300",
+        train: "10.364",
+        bus: "5.351",
+        boat: "914,6",
+        car: "157,4",
+        bike: "75,1",
+        total: "54.162",
       },
       longest: {
         Flight: {

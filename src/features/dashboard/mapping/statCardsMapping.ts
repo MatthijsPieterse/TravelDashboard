@@ -29,8 +29,9 @@ export interface StatCard<DataType = DashboardData> {
   darkTheme?: boolean;
   icon?: LucideIcon;
   title?: string;
-  subtext?: string;
+  subtext?: string | ((data: DataType) => string | number);
   getValue: (data: DataType) => string | number;
+  unit?: string;
 }
 
 // main stats
@@ -68,57 +69,63 @@ export const mainStatsMapping: StatCard[] = [
 // geo stats
 export const geoStatsMapping: StatCard[] = [
   {
-    color: "emerald",
+    color: "green",
     title: "Northernmost",
     icon: ArrowUp,
     getValue: (data) => data.geoStats.northernmost.name,
-  },
-  {
-    color: "emerald",
-    title: "Southernmost",
-    icon: ArrowDown,
-    getValue: (data) => data.geoStats.southernmost.name,
+    subtext: (data) => `Lon: ${data.geoStats.northernmost.coordinates[1].toFixed(2)})`,
   },
   {
     color: "green",
+    title: "Southernmost",
+    icon: ArrowDown,
+    getValue: (data) => data.geoStats.southernmost.name,
+    subtext: (data) => `Lon: ${data.geoStats.southernmost.coordinates[1].toFixed(2)})`,
+  },
+  {
+    color: "teal",
     title: "Highest Point",
     icon: Mountain,
     getValue: (data) =>
-      `${data.geoStats.highestpoint.name} (${data.geoStats.highestpoint.height})`,
+      `${data.geoStats.highestpoint.name}`,
+    subtext: (data) => `${data.geoStats.highestpoint.height}`,
   },
   {
-    color: "lime",
+    color: "emerald",
     title: "Lowest Point",
     icon: Map,
     getValue: (data) =>
-      `${data.geoStats.lowestpoint.name} (${data.geoStats.lowestpoint.height})`,
+      `${data.geoStats.lowestpoint.name}`,
+    subtext: (data) => `${data.geoStats.lowestpoint.height}`,
   },
   {
     color: "red",
     title: "Hottest Place",
     icon: Flame,
     getValue: (data) =>
-      `${data.geoStats.hottestTemperature.place} (${data.geoStats.hottestTemperature.temperature})`,
+      `${data.geoStats.hottestTemperature.place}`,
+    subtext: (data) => `${data.geoStats.hottestTemperature.temperature}`,
   },
   {
     color: "cyan",
     title: "Coldest Place",
     icon: Snowflake,
     getValue: (data) =>
-      `${data.geoStats.coldestTemperature.place} (${data.geoStats.coldestTemperature.temperature})`,
+      `${data.geoStats.coldestTemperature.place}`,
+    subtext: (data) => `${data.geoStats.coldestTemperature.temperature}`,
   },
 ];
 
 // flight stats
 export const flightMapping: StatCard[] = [
   {
-    color: "yellow",
+    color: "blue",
     title: "Time in Air",
     icon: Clock,
     getValue: (data) => data.transportation.timeInAir,
   },
   {
-    color: "slate",
+    color: "blue",
     title: "Airports Visited",
     icon: Building,
     getValue: (data) => data.transportation.airportsBeen,
@@ -144,6 +151,7 @@ export const transportationMapping: StatCard[] = [
     title: "Total Distance Traveled",
     icon: Car,
     getValue: (data) => data.transportation.distanceTraveled.total,
+    unit: "km",
   },
   ...["plane", "train", "bus", "boat", "car", "bike"].map((mode) => ({
     color: "amber",
@@ -151,6 +159,7 @@ export const transportationMapping: StatCard[] = [
     icon: Route,
     getValue: (data: DashboardData) =>
       data.transportation.distanceTraveled[mode],
+    unit: "km",
   })),
 ];
 
@@ -193,15 +202,17 @@ export const culturalMapping: StatCard[] = [
 export const tripRecordsMapping: StatCard[] = [
   {
     color: "teal",
-    title: "Longest Trip (days)",
+    title: "Longest Trip",
     icon: Timer,
     getValue: (data) => data.tripRecords.longestTrip,
+    unit: "days",
   },
   {
     color: "teal",
-    title: "Shortest Trip (days)",
+    title: "Shortest Trip",
     icon: Clock,
     getValue: (data) => data.tripRecords.shortestTrip,
+    unit: "day",
   },
 ];
 
@@ -215,193 +226,10 @@ export const personalFavoritesMapping: StatCard[] = [
       data.personal.favouriteTravelDestinations.overall.countries.join(", "),
   },
   {
-    color: "amber",
+    color: "yellow",
     title: "Favorite Cities",
     icon: Building2,
     getValue: (data) =>
       data.personal.favouriteTravelDestinations.overall.cities.join(", "),
   },
 ];
-
-// export const mainStatsConfig = [
-//   {
-//     color: "emerald",
-//     darkTheme: true,
-//     path: "globalStats.totalCountries",
-//     icon: Flag,
-//     subtext: "Countries Visited",
-//   },
-//   {
-//     color: "emerald",
-//     darkTheme: true,
-//     path: "globalStats.totalCities",
-//     icon: Building2,
-//     subtext: "Cities Visited",
-//   },
-//   {
-//     color: "emerald",
-//     darkTheme: true,
-//     path: "globalStats.totalContinents",
-//     icon: Map,
-//     subtext: "Continents Visited",
-//   },
-//   {
-//     color: "emerald",
-//     darkTheme: true,
-//     path: "tileStats.grid1.percentage",
-//     icon: Globe,
-//     format: (v: number) => (v).toFixed(2) + "%",
-//     subtext: "Of the world explored",
-//   },
-// ];
-
-// export const geoStatsConfig = [
-//   {
-//     color: "emerald",
-//     title: "Northernmost",
-//     path: "geoStats.northernmost.name",
-//     icon: ArrowUp,
-//   },
-//   {
-//     color: "emerald",
-//     title: "Southernmost",
-//     path: "geoStats.southernmost.name",
-//     icon: ArrowDown,
-//   },
-//   {
-//     color: "green",
-//     title: "Highest Point",
-//     path: "geoStats.highestpoint",
-//     icon: Mountain,
-//     format: (v: any) => `${v.name} (${v.height})`,
-//   },
-//   {
-//     color: "lime",
-//     title: "Lowest Point",
-//     path: "geoStats.lowestpoint",
-//     icon: Map,
-//     format: (v: any) => `${v.name} (${v.height})`,
-//   },
-//   {
-//     color: "red",
-//     title: "Hottest Place",
-//     path: "geoStats.hottestTemperature",
-//     icon: Flame,
-//     format: (v: any) => `${v.place} (${v.temperature})`,
-//   },
-//   {
-//     color: "cyan",
-//     title: "Coldest Place",
-//     path: "geoStats.coldestTemperature",
-//     icon: Snowflake,
-//     format: (v: any) => `${v.place} (${v.temperature})`,
-//   },
-// ];
-
-// export const flightConfig = [
-//   {
-//     color: "yellow",
-//     title: "Time in Air",
-//     path: "transportation.timeInAir",
-//     icon: Clock,
-//   },
-//   {
-//     color: "slate",
-//     title: "Airports Visited",
-//     path: "transportation.airportsBeen",
-//     icon: Building,
-//   },
-//   {
-//     color: "sky",
-//     title: "Airlines Flown",
-//     path: "transportation.airlinesFlown",
-//     icon: PlaneTakeoff,
-//   },
-//   {
-//     color: "sky",
-//     title: "Flights Taken",
-//     path: "transportation.flightsTaken",
-//     icon: Plane,
-//   },
-// ];
-
-// export const transportationConfig = [
-//   {
-//     color: "orange",
-//     title: "Total Distance Traveled",
-//     path: "transportation.distanceTraveled.total",
-//     icon: Car,
-//   },
-//   ...["plane","train","bus","boat","car","bike"].map((mode) => ({
-//     color: "amber",
-//     title: `${mode.charAt(0).toUpperCase() + mode.slice(1)} Distance`,
-//     path: `transportation.distanceTraveled.${mode}`,
-//     icon: Route,
-//   })),
-// ];
-
-// export const culturalConfig = [
-//   {
-//     color: "indigo",
-//     title: "Languages Heard",
-//     path: "cultural.languagesHeard.allDetailed",
-//     icon: Languages,
-//   },
-//   {
-//     color: "rose",
-//     title: "Cuisines Tried",
-//     path: "cultural.cuisinesTried",
-//     icon: Utensils,
-//   },
-//   {
-//     color: "emerald",
-//     title: "Currencies Used",
-//     path: "cultural.currenciesUsed",
-//     icon: Banknote,
-//   },
-//   {
-//     color: "violet",
-//     title: "Time Zones Visited",
-//     path: "cultural.timeZones",
-//     icon: Clock,
-//     format: (v: any) => `${v.visited} / ${v.total}`,
-//   },
-//   {
-//     color: "amber",
-//     title: "UNESCO Sites",
-//     path: "cultural.UNESCO",
-//     icon: Landmark,
-//   },
-// ];
-
-// export const tripRecordsConfig = [
-//   {
-//     color: "teal",
-//     title: "Longest Trip (days)",
-//     path: "tripRecords.longestTrip",
-//     icon: Timer,
-//   },
-//   {
-//     color: "teal",
-//     title: "Shortest Trip (days)",
-//     path: "tripRecords.shortestTrip",
-//     icon: Clock,
-//   },
-// ];
-
-// export const personalFavoritesConfig = [
-//   {
-//     color: "rose",
-//     title: "Favorite Countries",
-//     path: "personal.favouriteTravelDestinations.overall.countries",
-//     icon: Heart,
-//     format: (v: any[]) => v.join(", "),
-//   },
-//   {
-//     color: "amber",
-//     title: "Favorite Cities",
-//     path: "personal.favouriteTravelDestinations.overall.cities",
-//     icon: Building2,
-//     format: (v: any[]) => v.join(", "),
-//   },
-// ];

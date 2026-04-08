@@ -43,7 +43,8 @@ const Home = () => {
           icon={card.icon}
           title={card.title}
           value={value}
-          subText={card.subtext}
+          subText={typeof card.subtext === 'function' ? String(card.subtext(stats)) : card.subtext}
+          unit={card.unit}
         />
       );
     });
@@ -51,20 +52,14 @@ const Home = () => {
   return (
     <div className="h-screen flex overflow-hidden">
       {/* Sidebar */}
-      {/* <aside className="flex-none w-64 bg-sidebarStart text-white p-4 flex flex-col space-y-4">
-        <div className="rounded-full bg-gradient-to-br from-emerald-700 to-emerald-800 p-3 shadow-inner">
-          <WorldClock />
-        </div>
-        {renderCards(mainStatsMapping)}
-      </aside> */}
       <aside
         className={`fixed z-100 top-0 left-0 h-full w-64 bg-sidebarStart p-4 flex flex-col space-y-4 transform 
-                    transition-transform duration-300 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 md:static md:flex`}
+                    transition-transform duration-300 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 lg:static lg:flex`}
       >
         <div className="rounded-full bg-gradient-to-br from-emerald-700 to-emerald-800 p-3 shadow-inner">
           <div className="fixed top-0 left-0 w-full text-3xl">
             <button
-              className={`md:hidden ${sidebarOpen ? "" : "hidden"} p-2`}
+              className={`lg:hidden ${sidebarOpen ? "" : "hidden"} p-2`}
               onClick={() => setSidebarOpen(!sidebarOpen)}
             >
               ☰
@@ -81,7 +76,7 @@ const Home = () => {
         <header className="h-20 text-3xl bg-white p-4 pl-10">
           <div className="fixed top-0 left-0">
             <button
-              className="md:hidden p-2"
+              className="lg:hidden p-2"
               onClick={() => setSidebarOpen(!sidebarOpen)}
             >
               ☰
@@ -94,7 +89,7 @@ const Home = () => {
         <main className="flex-1 bg-page p-8 space-y-8 overflow-y-auto">
           {/* Map Block */}
           <div className="flex justify-center">
-            <section className="rounded-lg overflow-hidden shadow-[0_0px_8px_rgba(0,0,0,0.30)] w-8/10 h-80 md:h-160">
+            <section className="rounded-lg overflow-hidden shadow-[0_0px_8px_rgba(0,0,0,0.30)] w-full xl:w-9/10 2xl:w-8/10 h-80 md:h-120 lg:h-160">
               <MapComponent defaultCenter={[20, 10]} defaultZoom={2} />
             </section>
           </div>
@@ -103,7 +98,7 @@ const Home = () => {
             {/* Geography & Extremes */}
             <Block
               title="Geography & Extremes"
-              columns="md:grid-cols-4"
+              columns="sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
               width="md:col-span-2"
             >
               {renderCards(geoStatsMapping)}
@@ -134,7 +129,7 @@ const Home = () => {
 
           {/* Transportation Stats */}
           <div className="grid grid-cols-1 gap-8">
-            <Block title="Transportation Stats" columns="md:grid-cols-7">
+            <Block title="Transportation Stats" columns="sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
               {renderCards(transportationMapping)}
             </Block>
           </div>
@@ -143,7 +138,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             <Block
               title="Flight Stats"
-              columns="md:grid-cols-2"
+              columns="sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2"
               width="md:col-span-2"
             >
               {renderCards(flightMapping)}
@@ -152,7 +147,7 @@ const Home = () => {
             {/* Cultural Stats */}
             <Block
               title="Cultural Stats"
-              columns="md:grid-cols-4"
+              columns="sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
               width="md:col-span-3"
             >
               {renderCards(culturalMapping)}
@@ -161,11 +156,11 @@ const Home = () => {
 
           {/* Trip Records & Personal Favorites */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Block title="Trip Records" columns="md:grid-cols-2">
+            <Block title="Trip Records" columns="sm:grid-cols-2">
               {renderCards(tripRecordsMapping)}
             </Block>
 
-            <Block title="Personal Favorites" columns="md:grid-cols-2">
+            <Block title="Personal Favorites" columns="lg:grid-cols-2">
               {renderCards(personalFavoritesMapping)}
             </Block>
           </div>
