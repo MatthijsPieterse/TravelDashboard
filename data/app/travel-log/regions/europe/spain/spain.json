@@ -1,0 +1,91 @@
+{
+  "name": "spain",
+  "data": [
+    {
+      "summary": {
+        "overallRating": null,
+        "costLevel": null,
+        "transportRating": null,
+        "foodRating": null,
+        "safetyRating": null
+      },
+      "description": {
+        "intro": "",
+        "pros": [],
+        "cons": [],
+        "tips": [],
+        "thingsToKnow": [],
+        "culturalNotes": [],
+        "personalNotes": []
+      },
+      "travelPracticalities": {
+        "bestTimeToVisit": [],
+        "visaNotes": "",
+        "currencyNotes": "",
+        "paymentMethods": [],
+        "transportTips": [],
+        "languageTips": [],
+        "safetyNotes": [],
+        "packingTips": []
+      },
+      "foodCulture": {
+        "mustTryDishes": [],
+        "regionalDifferences": [],
+        "mealTimes": "",
+        "tippingCulture": "",
+        "dietaryOptions": []
+      },
+      "gettingAround": {
+        "trainSystem": "",
+        "busSystem": "",
+        "domesticFlights": "",
+        "carRental": "",
+        "bikeFriendliness": null
+      },
+      "regionsOverview": [
+        {
+          "name": "",
+          "knownFor": [],
+          "notes": "",
+          "personalInterestLevel": null
+        }
+      ],
+      "recommendationsFromOthers": {
+        "placesToVisit": [],
+        "foodsToTry": [],
+        "experiences": []
+      },
+      "metadata": {
+        "tags": [],
+        "lastUpdated": "",
+        "source": "personal_experience"
+      }
+    }
+  ],
+  "places": [
+    {
+      "name": "Madrid",
+      "englishName": "",
+      "coordinates": [
+        -3.703573,
+        40.416718
+      ]
+    },
+    {
+      "name": "València",
+      "englishName": "",
+      "coordinates": [
+        -0.376346,
+        39.469715
+      ]
+    },
+    {
+      "name": "Alacant / Alicante",
+      "englishName": "",
+      "coordinates": [
+        -0.488184,
+        38.343629
+      ]
+    }
+  ]
+}

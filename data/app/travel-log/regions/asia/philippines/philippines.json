@@ -1,0 +1,78 @@
+{
+  "name": "philippines",
+  "data": [],
+  "places": [
+    {
+      "name": "Cebu City",
+      "englishName": "",
+      "coordinates": [
+        123.90192,
+        10.293564
+      ]
+    },
+    {
+      "name": "Ormoc",
+      "englishName": "",
+      "coordinates": [
+        124.60908,
+        11.005292
+      ]
+    },
+    {
+      "name": "Baybay",
+      "englishName": "",
+      "coordinates": [
+        124.79775,
+        10.677803
+      ]
+    },
+    {
+      "name": "Puertobello",
+      "englishName": "",
+      "coordinates": [
+        124.49049,
+        10.680663
+      ]
+    },
+    {
+      "name": "Poro",
+      "englishName": "",
+      "coordinates": [
+        124.40734,
+        10.628766
+      ]
+    },
+    {
+      "name": "Cabonga-an",
+      "englishName": "",
+      "coordinates": [
+        124.34241,
+        10.688578
+      ]
+    },
+    {
+      "name": "Tulang Diot",
+      "englishName": "",
+      "coordinates": [
+        124.32474,
+        10.715539
+      ]
+    },
+    {
+      "name": "Mandaue",
+      "englishName": "",
+      "coordinates": [
+        123.94273,
+        10.326906
+      ]
+    },
+    {
+      "name": "Liloan",
+      "englishName": "",
+      "coordinates": [
+        123.99876,
+        10.399849
+      ]
+    }
+  ]
+}

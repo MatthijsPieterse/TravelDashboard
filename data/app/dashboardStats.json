@@ -1,8 +1,8 @@
 {
   "globalStats": {
-    "totalCountries": 26,
-    "totalCities": 271,
-    "totalContinents": 2
+    "totalNations": 26,
+    "totalPlaces": 254,
+    "totalRegions": 2
   },
   "tileStats": {
     "grid1": {
@@ -131,14 +131,14 @@
   "personal": {
     "favouriteTravelDestinations": {
       "overall": {
-        "countries": [
+        "nations": [
           "Philippines",
           "Vietnam",
           "Andorra",
           "Italy",
           "Spain"
         ],
-        "cities": [
+        "places": [
           "Budapest",
           "Andorra la Vella",
           "Prague",
@@ -146,16 +146,16 @@
           "Valencia"
         ]
       },
-      "byContinent": {
+      "byRegion": {
         "Europe": {
-          "countries": [
+          "nations": [
             "Andorra",
             "Italy",
             "Spain",
             "Hungary",
             "Switzerland"
           ],
-          "cities": [
+          "places": [
             "Budapest",
             "Andorra la Vella",
             "Prague",
@@ -164,18 +164,18 @@
           ]
         },
         "Asia": {
-          "countries": [
+          "nations": [
             "Philippines",
             "Vietnam"
           ],
-          "cities": [
+          "places": [
             "Da Lat",
             "Ho Chi Minh City"
           ]
         }
       },
       "netherlands": {
-        "cities": [
+        "places": [
           "Valkenburg",
           "Utrecht",
           "Zutphen"

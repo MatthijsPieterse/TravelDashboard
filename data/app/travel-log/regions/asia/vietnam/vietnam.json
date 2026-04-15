@@ -1,0 +1,54 @@
+{
+  "name": "vietnam",
+  "data": [],
+  "places": [
+    {
+      "name": "Thành phố Hồ Chí Minh",
+      "englishName": "",
+      "coordinates": [
+        106.70114,
+        10.776391
+      ]
+    },
+    {
+      "name": "Đà Lạt",
+      "englishName": "",
+      "coordinates": [
+        108.43758,
+        11.940241
+      ]
+    },
+    {
+      "name": "Tà Nung",
+      "englishName": "",
+      "coordinates": [
+        108.34599,
+        11.921099
+      ]
+    },
+    {
+      "name": "Liên Nghĩa",
+      "englishName": "",
+      "coordinates": [
+        108.37425,
+        11.731988
+      ]
+    },
+    {
+      "name": "Mỹ Tho",
+      "englishName": "",
+      "coordinates": [
+        106.36584,
+        10.36062
+      ]
+    },
+    {
+      "name": "Phạm Văn Cội",
+      "englishName": "",
+      "coordinates": [
+        106.52302,
+        11.034453
+      ]
+    }
+  ]
+}

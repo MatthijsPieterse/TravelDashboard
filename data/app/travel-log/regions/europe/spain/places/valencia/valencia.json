@@ -1,0 +1,400 @@
+{
+  "name": "València",
+  "englishName": "",
+  "coordinates": [-0.376346, 39.469715],
+  "data": [
+    {
+      "type": "city",
+      "summary": {
+        "overallRating": "★★★★☆",
+        "affordability": "★★★☆☆",
+        "foodRating": "★★★★☆",
+        "nightlife": "★★★★☆",
+        "walkability": "★★★★☆",
+        "publicTransport": "★★★☆☆"
+      },
+      "description": {
+        "intro": "",
+        "pros": [
+          "There are a lot of people, but it’s far from being over crowded.",
+          "The city center is small enough that you can walk almost everywhere, but large enough that you can still get tired doing it.",
+          "Even though the area around the city has a lot of elevation, the city itself is flat.",
+          "It almost never rains here.",
+          "Public transportation is decent; you can get around easily with the buses.",
+          "There is decent biking infrastructure.",
+          "It has a lot of nice parks."
+        ],
+        "cons": [],
+        "tips": [
+          "Jardí del Túria is a great place for outdoor sports. It has separate lanes for walking, running, and biking, plus sports fields and simple outdoor gyms."
+        ],
+        "personalNotes": [
+          "There are a lot of Dutch people here.",
+          "It felt like a very nice place to settle down and live."
+        ],
+        "thingsToKnow": []
+      },
+      "lists": {
+        "activities": [
+          {
+            "haveDone": [
+              {
+                "name": "Walking around Jardí del Túria",
+                "type": "",
+                "price": "",
+                "comments": [],
+                "recommend": "",
+                "lastUpdated": ""
+              },
+              {
+                "name": "Go to the beach",
+                "type": "",
+                "price": "",
+                "comments": [],
+                "recommend": "",
+                "lastUpdated": ""
+              }
+            ]
+          },
+          {
+            "wantToDo": []
+          }
+        ],
+        "food_and_drinks": [
+          {
+            "haveBeen": [
+              {
+                "name": "Kukla",
+                "type": "Restaurant",
+                "cuisine": "Middle Eastern",
+                "price": "Cheap",
+                "comments": [
+                  "It can be quite busy and it’s a small place, so reserving beforehand is a good idea."
+                ],
+                "recommend": "yes",
+                "lastUpdated": ""
+              },
+              {
+                "name": "Gino Banana",
+                "type": "Restaurant / Pizzeria",
+                "cuisine": "Italian (Pizza)",
+                "price": "Cheap",
+                "comments": [
+                  "You can order very small pizzas to share.",
+                  "The owner's first restaurant with the same concept and food is La Finestra."
+                ],
+                "recommend": "yes",
+                "lastUpdated": ""
+              },
+              {
+                "name": "The Wine Gallery",
+                "type": "Restaurant / Bar",
+                "cuisine": "Spanish (Tapas)",
+                "price": "Normal",
+                "comments": [
+                  "It has a very large wine selection, including many local wines."
+                ],
+                "recommend": "yes",
+                "lastUpdated": ""
+              },
+              {
+                "name": "Café ArtySana - Ruzafa",
+                "type": "Cafe / Brunch / Lunch",
+                "cuisine": "Spanish? / N/A",
+                "price": "Cheap",
+                "comments": [
+                  "Nice quiet place.",
+                  "Very good menu deals.",
+                  "Large range of food and drinks."
+                ],
+                "recommend": "yes",
+                "lastUpdated": ""
+              },
+              {
+                "name": "Amor Amargo",
+                "type": "Restaurant",
+                "cuisine": "Spanish?",
+                "price": "Normal",
+                "comments": ["On the fancier side, but not too expensive."],
+                "recommend": "yes",
+                "lastUpdated": ""
+              },
+              {
+                "name": "St. Patrick's",
+                "type": "Bar",
+                "cuisine": "Irish / N/A",
+                "price": "Cheap / Normal",
+                "comments": [
+                  "Nice pub for partying.",
+                  "Most people can usually speak English.",
+                  "Lots of nice people."
+                ],
+                "recommendend": "yes",
+                "lastUpdated": ""
+              }
+            ]
+          },
+          {
+            "wantToGo": [
+              {
+                "name": "La Finestra",
+                "type": "Restaurant / Pizzeria",
+                "cuisine": "Italian (Pizza)",
+                "price": "Cheap",
+                "comments": [
+                  "You can order very small pizzas to share.",
+                  "Can be very busy.",
+                  "Gino Banana has a very similar concept and food and is less busy."
+                ],
+                "recommendend": "",
+                "lastUpdated": ""
+              },
+              {
+                "name": "Cervecería Baden Baden",
+                "type": "Restaurant / Bar",
+                "cuisine": "German",
+                "price": "Cheap / Normal",
+                "comments": ["It has a great selection of beers."],
+                "recommendend": "",
+                "lastUpdated": ""
+              }
+            ]
+          },
+          {
+            "dontGo": []
+          }
+        ],
+        "accommodations": [],
+        "recommendationsFromOthers": {
+          "goingOut": [
+            {
+              "name": "Unic",
+              "notes": ["Free entry"],
+              "area": "El Carmen"
+            },
+            {
+              "name": "Radio City",
+              "notes": ["Free entry"],
+              "area": "El Carmen"
+            },
+            {
+              "name": "Fox Congo",
+              "notes": ["Free entry"],
+              "area": "El Carmen"
+            },
+            {
+              "name": "La Diva",
+              "notes": ["Entry at the door usually includes a drink"],
+              "area": ""
+            },
+            {
+              "name": "Marina",
+              "notes": ["Usually better to buy tickets in advance"],
+              "area": ""
+            },
+            {
+              "name": "Mya / Umbracle",
+              "notes": ["Expensive, but a very cool location"],
+              "area": ""
+            },
+            {
+              "name": "La Fabrica de Hielo",
+              "notes": [
+                "Also nice for drinks during the day and in the evening"
+              ],
+              "area": ""
+            },
+            {
+              "name": "Committee",
+              "notes": ["Closed in summer"],
+              "area": ""
+            },
+            {
+              "name": "Indiana",
+              "notes": ["Closed in summer"],
+              "area": ""
+            },
+            {
+              "name": "Spook",
+              "notes": ["Techno"],
+              "area": ""
+            },
+            {
+              "name": "Oven",
+              "notes": ["Techno"],
+              "area": ""
+            }
+          ],
+          "barsForDrinks": [
+            {
+              "name": "Cafe Negrito",
+              "notes": ["The rest of Plaza Negrito is also great"],
+              "area": "La Seu"
+            },
+            {
+              "name": "St. Patricks",
+              "notes": ["Irish pub"],
+              "area": ""
+            },
+            {
+              "name": "Cafe Berlin",
+              "notes": [],
+              "area": "Rusafa"
+            },
+            {
+              "name": "Cafe de las Horas",
+              "notes": ["Best Agua de Valencia"],
+              "area": ""
+            },
+            {
+              "name": "100 Montaditos",
+              "notes": ["Multiple locations", "Very cheap"],
+              "area": ""
+            },
+            {
+              "name": "Cafe Infanta",
+              "notes": [],
+              "area": "El Carmen"
+            },
+            {
+              "name": "El Cafetín",
+              "notes": [],
+              "area": "El Carmen"
+            },
+            {
+              "name": "Cafè Sant Jaume",
+              "notes": [],
+              "area": "El Carmen"
+            },
+            {
+              "name": "Atenea",
+              "notes": ["Rooftop bar"],
+              "area": ""
+            },
+            {
+              "name": "Culture",
+              "notes": [],
+              "area": "Rusafa"
+            },
+            {
+              "name": "Comic",
+              "notes": [],
+              "area": "Rusafa"
+            }
+          ],
+          "breakfastLunchBrunch": [
+            {
+              "name": "Dulce de Leche",
+              "notes": ["Multiple locations"],
+              "area": ""
+            },
+            {
+              "name": "Federal",
+              "notes": [],
+              "area": "Centrum"
+            },
+            {
+              "name": "La Mas Bonita",
+              "notes": [],
+              "area": "Rusafa"
+            },
+            {
+              "name": "Bluebell Coffee Roasters",
+              "notes": [],
+              "area": "Rusafa"
+            },
+            {
+              "name": "Cafe ArtySana",
+              "notes": [],
+              "area": "Rusafa"
+            },
+            {
+              "name": "Milk and Butter",
+              "notes": [],
+              "area": "Rusafa"
+            },
+            {
+              "name": "Blackbird",
+              "notes": [],
+              "area": "Rusafa"
+            },
+            {
+              "name": "Boa Beach",
+              "notes": [],
+              "area": "Strand"
+            }
+          ],
+          "dinner": {
+            "italian": [
+              { "name": "La Finestra", "notes": [], "area": "Rusafa" },
+              {
+                "name": "Gino Banana",
+                "notes": ["Same concept as La Finestra"],
+                "area": "Rusafa"
+              },
+              { "name": "San Tommaso", "notes": [], "area": "La Seu" },
+              { "name": "Filippa's", "notes": [], "area": "Rusafa" },
+              { "name": "La Favole", "notes": [], "area": "Centrum" },
+              { "name": "La Papardella", "notes": [], "area": "La Seu" },
+              { "name": "Pasta & Passione", "notes": [], "area": "La Seu" },
+              { "name": "Masa Madre", "notes": [], "area": "El Carmen" }
+            ],
+            "tapas": [
+              { "name": "The Wine Gallery", "notes": [], "area": "Rusafa" },
+              { "name": "El Camerino", "notes": [], "area": "Rusafa" },
+              { "name": "Amor Amargo", "notes": [], "area": "Rusafa" },
+              { "name": "MAUI", "notes": [], "area": "Rusafa" },
+              { "name": "Pintxo i Trago", "notes": [], "area": "Centrum" },
+              { "name": "Arandinos", "notes": [], "area": "El Carmen" },
+              { "name": "Casa Vani", "notes": [], "area": "El Carmen" },
+              {
+                "name": "Botega La Rentaora",
+                "notes": [],
+                "area": "El Carmen"
+              },
+              { "name": "BARDEBARES", "notes": [], "area": "Centrum" },
+              { "name": "Bar Cassalla", "notes": [], "area": "" }
+            ],
+            "other": [
+              {
+                "name": "Saona",
+                "notes": ["Multiple locations"],
+                "area": ""
+              },
+              {
+                "name": "Buga Ramen",
+                "notes": ["2 locations"],
+                "area": ""
+              },
+              {
+                "name": "Kukla",
+                "notes": ["Mega lekker!!"],
+                "area": "El Carmen"
+              },
+              { "name": "Mercabañal", "notes": [], "area": "" },
+              { "name": "Mercader", "notes": [], "area": "" },
+              { "name": "Mercat de Colon", "notes": [], "area": "" },
+              { "name": "Jenkin's", "notes": ["Burgers"], "area": "" },
+              { "name": "Milfers Burgers", "notes": [], "area": "" },
+              { "name": "Mathilde", "notes": [], "area": "" }
+            ]
+          }
+        }
+      },
+      "metadata": {
+        "tags": [],
+        "status": "",
+        "lastUpdated": "",
+        "source": "personal_experience"
+      },
+      "images": [
+        "1_20240213_112220.jpg",
+        "2_20240213_150135.jpg",
+        "3_20240216_174524.jpg",
+        "4_20240216_173805.jpg",
+        "5_20240216_164907.jpg",
+        "6_20240216_174529.jpg"
+      ]
+    }
+  ]
+}
