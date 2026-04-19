@@ -2453,6 +2453,7 @@
             {
               "name": "València",
               "englishName": "",
+              "coverImg": "1_20240213_112220.jpg",
               "coordinates": [
                 -0.376346,
                 39.469715
@@ -2471,23 +2472,24 @@
                   "description": {
                     "intro": "",
                     "pros": [
-                      "There are a lot of people, but it’s far from being over crowded.",
-                      "The city center is small enough that you can walk almost everywhere, but large enough that you can still get tired doing it.",
-                      "Even though the area around the city has a lot of elevation, the city itself is flat.",
-                      "It almost never rains here.",
+                      "The city is easy to get around on foot while still feeling fairly spread out.",
+                      "Despite the surrounding hills and mountainous terrain, the city itself is mostly flat.",
+                      "It rarely rains here.",
                       "Public transportation is decent; you can get around easily with the buses.",
                       "There is decent biking infrastructure.",
-                      "It has a lot of nice parks."
+                      "The city has many nice parks."
                     ],
                     "cons": [],
                     "tips": [
-                      "Jardí del Túria is a great place for outdoor sports. It has separate lanes for walking, running, and biking, plus sports fields and simple outdoor gyms."
+                      "Jardí del Túria is a great place for outdoor sports. It has separate lanes for walking, running, and biking, plus sports fields and simple outdoor gyms"
                     ],
                     "personalNotes": [
-                      "There are a lot of Dutch people here.",
                       "It felt like a very nice place to settle down and live."
                     ],
-                    "thingsToKnow": []
+                    "thingsToKnow": [
+                      "There are a lot of people, but it doesn’t feel overcrowded.",
+                      "There are many Dutch people here."
+                    ]
                   },
                   "lists": {
                     "activities": [
@@ -2583,8 +2585,7 @@
                             "price": "Cheap / Normal",
                             "comments": [
                               "Nice pub for partying.",
-                              "Most people can usually speak English.",
-                              "Lots of nice people."
+                              "Most people that come here can speak English."
                             ],
                             "recommendend": "yes",
                             "lastUpdated": ""
@@ -2601,7 +2602,7 @@
                             "comments": [
                               "You can order very small pizzas to share.",
                               "Can be very busy.",
-                              "Gino Banana has a very similar concept and food and is less busy."
+                              "Gino Banana has the same concept and food and is less busy."
                             ],
                             "recommendend": "",
                             "lastUpdated": ""
@@ -2722,7 +2723,7 @@
                         {
                           "name": "Cafe Berlin",
                           "notes": [],
-                          "area": "Rusafa"
+                          "area": "Ruzafa"
                         },
                         {
                           "name": "Cafe de las Horas",
@@ -2764,12 +2765,12 @@
                         {
                           "name": "Culture",
                           "notes": [],
-                          "area": "Rusafa"
+                          "area": "Ruzafa"
                         },
                         {
                           "name": "Comic",
                           "notes": [],
-                          "area": "Rusafa"
+                          "area": "Ruzafa"
                         }
                       ],
                       "breakfastLunchBrunch": [
@@ -2783,37 +2784,37 @@
                         {
                           "name": "Federal",
                           "notes": [],
-                          "area": "Centrum"
+                          "area": "Ciutat Vella"
                         },
                         {
                           "name": "La Mas Bonita",
                           "notes": [],
-                          "area": "Rusafa"
+                          "area": "Ruzafa"
                         },
                         {
                           "name": "Bluebell Coffee Roasters",
                           "notes": [],
-                          "area": "Rusafa"
+                          "area": "Ruzafa"
                         },
                         {
                           "name": "Cafe ArtySana",
                           "notes": [],
-                          "area": "Rusafa"
+                          "area": "Ruzafa"
                         },
                         {
                           "name": "Milk and Butter",
                           "notes": [],
-                          "area": "Rusafa"
+                          "area": "Ruzafa"
                         },
                         {
                           "name": "Blackbird",
                           "notes": [],
-                          "area": "Rusafa"
+                          "area": "Ruzafa"
                         },
                         {
                           "name": "Boa Beach",
                           "notes": [],
-                          "area": "Strand"
+                          "area": "Beach"
                         }
                       ],
                       "dinner": {
@@ -2821,14 +2822,14 @@
                           {
                             "name": "La Finestra",
                             "notes": [],
-                            "area": "Rusafa"
+                            "area": "Ruzafa"
                           },
                           {
                             "name": "Gino Banana",
                             "notes": [
                               "Same concept as La Finestra"
                             ],
-                            "area": "Rusafa"
+                            "area": "Ruzafa"
                           },
                           {
                             "name": "San Tommaso",
@@ -2838,12 +2839,12 @@
                           {
                             "name": "Filippa's",
                             "notes": [],
-                            "area": "Rusafa"
+                            "area": "Ruzafa"
                           },
                           {
                             "name": "La Favole",
                             "notes": [],
-                            "area": "Centrum"
+                            "area": "Ciutat Vella"
                           },
                           {
                             "name": "La Papardella",
@@ -2865,27 +2866,27 @@
                           {
                             "name": "The Wine Gallery",
                             "notes": [],
-                            "area": "Rusafa"
+                            "area": "Ruzafa"
                           },
                           {
                             "name": "El Camerino",
                             "notes": [],
-                            "area": "Rusafa"
+                            "area": "Ruzafa"
                           },
                           {
                             "name": "Amor Amargo",
                             "notes": [],
-                            "area": "Rusafa"
+                            "area": "Ruzafa"
                           },
                           {
                             "name": "MAUI",
                             "notes": [],
-                            "area": "Rusafa"
+                            "area": "Ruzafa"
                           },
                           {
                             "name": "Pintxo i Trago",
                             "notes": [],
-                            "area": "Centrum"
+                            "area": "Ciutat Vella"
                           },
                           {
                             "name": "Arandinos",
@@ -2905,7 +2906,7 @@
                           {
                             "name": "BARDEBARES",
                             "notes": [],
-                            "area": "Centrum"
+                            "area": "Ciutat Vella"
                           },
                           {
                             "name": "Bar Cassalla",
@@ -2931,7 +2932,7 @@
                           {
                             "name": "Kukla",
                             "notes": [
-                              "Mega lekker!!"
+                              ""
                             ],
                             "area": "El Carmen"
                           },
