@@ -2486,13 +2486,6 @@
                   ]
                 }
               ],
-              "wishlist": [
-                {
-                  "type": "Location",
-                  "name": "Sevilla",
-                  "notes": ""
-                }
-              ],
               "recommendationsFromOthers": {},
               "metadata": {
                 "tags": [],
