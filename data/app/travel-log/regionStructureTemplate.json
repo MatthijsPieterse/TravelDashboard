@@ -1,0 +1,59 @@
+{
+  "name": "",
+  "coverImg": "",
+  "data": [
+    {
+      "description": {
+        "intro": "",
+        "tips": [],
+        "personalNotes": []
+      },
+      "travelOverview": {
+        "bestTravelStyles": []
+      },
+      "transportSystems": {
+        "commonTransportTypes": [
+          {
+            "type": "",
+            "notes": ""
+          }
+        ],
+        "majorTravelCorridors": [
+          {
+            "route": "",
+            "transportType": "",
+            "notes": ""
+          }
+        ]
+      },
+      "favouriteCitiesShortlist": [
+        {
+          "name": "",
+          "country": "",
+          "knownFor": [],
+          "notes": ""
+        }
+      ],
+      "recommendedApps": [
+        {
+          "name": "",
+          "category": "",
+          "purpose": "",
+          "notes": ""
+        }
+      ],
+      "wishlist": [
+        {
+          "type": "",
+          "name": "",
+          "notes": ""
+        }
+      ],
+      "metadata": {
+        "tags": [],
+        "status": "",
+        "lastUpdated": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "World",
+  "data": [
+    {
+      "intro": "",
+      "recommendedApps": [
+        {
+          "name": "",
+          "category": "",
+          "purpose": "",
+          "notes": ""
+        }
+      ],
+      "wishlist": [
+        {
+          "type": "country | city | region | route | experience",
+          "name": "",
+          "priority": "",
+          "notes": ""
+        }
+      ],
+      "favoriteHighlights": [
+        {
+          "type": "country | city | region | place | experience",
+          "name": "",
+          "location": "",
+          "notes": ""
+        }
+      ],
+      "metadata": {
+        "tags": [],
+        "status": "",
+        "lastUpdated": ""
+      }
+    }
+  ]
+}

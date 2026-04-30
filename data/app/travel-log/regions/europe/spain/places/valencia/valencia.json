@@ -12,7 +12,11 @@
         "foodRating": "★★★★☆",
         "nightlife": "★★★★☆",
         "walkability": "★★★★☆",
-        "publicTransport": "★★★☆☆"
+        "publicTransport": "★★★☆☆",
+        "returnInterest": {
+          "level": null,
+          "note": ""
+        }
       },
       "description": {
         "intro": "",
@@ -34,7 +38,8 @@
         "thingsToKnow": [
           "There are a lot of people, but it doesn’t feel overcrowded.",
           "There are many Dutch people here."
-        ]
+        ],
+        "transportTips": []
       },
       "lists": {
         "activities": [
@@ -166,6 +171,7 @@
           }
         ],
         "accommodations": [],
+        "recommendedApps": [],
         "recommendationsFromOthers": {
           "goingOut": [
             {
@@ -385,8 +391,7 @@
       "metadata": {
         "tags": [],
         "status": "",
-        "lastUpdated": "",
-        "source": "personal_experience"
+        "lastUpdated": ""
       },
       "images": [
         "1_20240213_112220.jpg",
